@@ -27,7 +27,6 @@
 						{{else}}
 						<span class="name">{{@blog.title}}</span>
 						{{/if}}
-						
 					</a>
 				</div>
 				<div class="nav-menu">
@@ -36,14 +35,110 @@
 					<a class="menu" data-action="menu" data-target="menu"><i class="icon-menu"></i></a>
 					{{/if}}
 				</div>
-			</nav>			
+			</nav>
 			{{{body}}}
 			<div id="body-class" style="display: none;" class="{{body_class}}"></div>
 			<footer id="footer">
-				<section class="credits">
-					<span class="credits-theme">Theme <a href="https://github.com/zutrinken/bleak" target="_blank" rel="nofollow">Bleak</a> by <a href="http://zutrinken.com" target="_blank" rel="nofollow">zutrinken</a></span>
-					<span class="credits-software">Published with <a href="http://ghost.org" target="_blank" rel="nofollow">Ghost</a></span>
-				</section>
+				<div class="row">
+					<nav id="ft0" class="footer-nav">
+						<h5 class="footer-title">
+							<a href="https://www.softhatch.com">
+                <img class="logo" src="/assets/images/softhatch_white.png"/>
+              </a>
+						</h5>
+						<ul>
+							<li>
+								<a href="tel:16692442824">Call Us: +1 669-24HATCH</a>
+							</li>
+							<li>
+								<a>2443 Fillmore St #380-8854 </br>San Francisco, CA 94115</a>
+							</li>
+						</ul>
+					</nav>
+					<nav id="ft1" class="footer-nav">
+						<h5 class="footer-title">Our Company</h5>
+						<ul>
+							<li>
+								<a href="https://www.softhatch.com/about">About Us</a>
+							</li>
+							<li>
+								<a href="https://www.softhatch.com/approach">Our Approach</a>
+							</li>
+							<li>
+								<a href="https://www.softhatch.com/tickets">Ticketing Solution</a>
+							</li>
+						</ul>
+					</nav>
+					<nav id="ft2" class="footer-nav">
+						<h5 class="footer-title">Take Action</h5>
+						<ul>
+							<li>
+								<a href="https://www.softhatch.com/contact">Contact us</a>
+							</li>
+							<li>
+								<a href="http://blog.softhatch.com/">Read our blog</a>
+							</li>
+							<li>
+								<a href="https://twitter.com/messages/compose?recipient_id=769758358131703808" class="twitter-dm-button" data-show-screen-name="false" data-dnt="true" data-screen-name="softhatchHQ" data-show-count="false">Message @softhatchHQ</a>
+							</li>
+						</ul>
+					</nav>
+					<nav id="ft5" class="footer-nav">
+						<h5 class="footer-title">Social</h5>
+						<ul class="social">
+							<li>
+								<a href="http://facebook.com/softhatch"><img src="/assets/images/facebook.png">
+									Facebook
+								</a>
+							</li>
+							<li>
+								<a href="http://twitter.com/softhatchhq"><img src="/assets/images/twitter.png">
+									Twitter
+								</a>
+							</li>
+							<li>
+								<a href="http://plus.google.com/+Softhatch"><img src="/assets/images/google-plus.png">Google+
+								</a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/company/softhatch"><img src="/assets/images/linkedin.png">
+									Linkedin
+								</a>
+							</li>
+							<li>
+								<a href="http://instagram.com/softhatch"><img src="/assets/images/instagram.png">
+									Instagram
+								</a>
+							</li>
+							<li>
+								<a href="http://blog.softhatch.com/rss/"><img src="/assets/images/rss.png">
+									RSS
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<nav id="ft6" class="footer-nav">
+						<h5 class="footer-title">Legal</h5>
+						<ul class="legal">
+							<li>
+								<a href="https://www.softhatch.com/terms" rel="nofollow">Terms of Use</a>
+							</li>
+							<li>
+								<a href="https://www.softhatch.com/privacypolicy" rel="nofollow">Privacy Policy</a>
+							</li>
+							<li>
+								<a>© 2016 Softhatch</a>
+							</li>
+						</ul>
+					</nav>
+					<nav id="ft7" class="footer-nav">
+						<h5 class="footer-title">Subscribe</h5>
+						<div class="footer-subscribe">
+							<div class="footer-subscribe-text">Get the latest posts delivered right to your inbox.</div>
+							{{subscribe_form placeholder="Your email address"}}
+						</div>
+					</nav>
+				</div>
 			</footer>
 			{{#if @blog.navigation}}
 			{{navigation}}
@@ -51,7 +146,7 @@
 		</div>
 	</section>
 	{{ghost_foot}}
-	
+
 	<script type="text/javascript" src="{{asset "js/dependencies.js"}}"></script>
 	<script type="text/javascript" src="{{asset "js/script.js"}}"></script>
 </body>

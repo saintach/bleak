@@ -1,0 +1,13 @@
+<form method="post" action="{{action}}" class="subscribe-form">
+    {{hidden}}
+
+    <div class="form-group{{#if error}} error{{/if}}">
+        {{input_email class=input_class placeholder=placeholder value=email autofocus=autofocus}}
+    </div>
+    <button class="subscribe-submit" type="submit">Subscribe</button>
+    {{script}}
+</form>
+
+{{#if error}}
+    <p class="main-error">{{{error.message}}}</p>
+{{/if}}
